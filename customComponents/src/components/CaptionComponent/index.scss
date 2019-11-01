@@ -2,7 +2,7 @@
   display: none !important;
 }
 
-.rate-components {
+.caption-components {
   float: right;
   color: #fff;
   height: 35px;
@@ -11,25 +11,28 @@
   margin-top: 5px;
 }
 
-.current-rate {
+.current-caption {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
-  width: 70px;
+  width: 100px;
   cursor: pointer;
 }
 
-.rate-list {
+.caption-list {
   position: absolute;
   bottom: 46px;
   display: none;
   padding: 0;
   margin: 0;
   list-style: none;
+  height: 150px;
+  width: 100px;
+  overflow-y: scroll;
   li {
     text-align: center;
-    width: 70px;
+    width: 100px;
     line-height: 30px;
     background-color: rgba(0, 0, 0, .6);
     cursor: pointer;
@@ -45,10 +48,14 @@
   }
 }
 @media(max-width: 768px) {
-  .current-rate {
+  .current-caption {
     width: 40px;
   }
-  .rate-list li {
+  .caption-list li {
     width: 43px;
   }
+}
+
+.prism-player .prism-info-display .switchimg {
+  color:#fff
 }
